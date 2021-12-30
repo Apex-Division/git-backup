@@ -1,0 +1,26 @@
+# Git Full url, with username and password like https://username:password@github.com/username/repository.git
+GIT_URL="https://username:password@github.com/username/repository.git"
+
+GIT_CD_PATH="Path"
+
+# Whether to backup mysql DBs or not, 1 or 0
+GIT_BACKUP_DB=1
+
+# Below DB credentials only if GIT_BACKUP_DB = 1
+# Set as per requirement, if more than one DB to be backed up, use GIT_MYSQL_2 and so on
+# IMP :::: Make sure to update GIT_MYSQL_MAX_INDEX with number of DBs to be backed up
+# GIT_MYSQL_1=("user_1" "pass_1" "db_1" "localhost" "3306")
+# GIT_MYSQL_MAX_INDEX=1
+
+# Use carefully, for small db, this can be set "--extended-insert=FALSE" , for large tables, best not to use it, cause the import will be slow, for db with large tables, set to ""
+GIT_MYSQL_EXTENDED_INSERT="--extended-insert=FALSE"
+#GIT_MYSQL_EXTENDED_INSERT=""
+
+# Whether to compress large sql file to .tgz or not. Ideally we should not, if the db change is not that frequent. Cause .tgz file or parts of it is treated as bin file
+# And diff will not work on it. So, best use extended-insert false and don't compress it.
+GIT_MYSQL_COMPRESS=0
+
+
+GIT_DELETE_DB=1
+GIT_DELETE_GIT=1
+GIT_PULL=0
