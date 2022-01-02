@@ -1,5 +1,5 @@
 # Git Full url, with username and password like https://username:password@github.com/username/repository.git
-GIT_URL="https://username:password@github.com/username/repository.git"
+GIT_URL="https://apexdivision:password@github.com/Apex-Division/repository.git"
 
 GIT_CD_PATH="Path"
 
