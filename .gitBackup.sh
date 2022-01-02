@@ -280,21 +280,21 @@ fi
 
 
 
-if [[ $GIT_DELETE_DB == '1' ]]; then
+# if [[ $GIT_DELETE_DB == '1' ]]; then
   # Delete created DB files
   # echo
   # echo -e "${CYAN}Delete created DB files${NC}"
   # rm -rf .db
-fi
+# fi
 
 
 
-if [[ $GIT_DELETE_GIT == '1' ]]; then
+# if [[ $GIT_DELETE_GIT == '1' ]]; then
   # Delete .git folder
   # echo
   # echo -e "${CYAN}Delete .git${NC}"
   # rm -rf .git
-fi
+# fi
 
 
 
